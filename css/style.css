@@ -197,6 +197,37 @@ nav {
     letter-spacing: 0.01em;
 }
 
+.sidebar-info h1 a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(212, 169, 152, 0.58);
+    transition: color 160ms ease, border-color 160ms ease;
+}
+
+.sidebar-info h1 a::after {
+    content: "↗";
+    color: var(--accent-soft);
+    font-family: "Inter", "Segoe UI", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    opacity: 0.82;
+    transform: translateY(-3px);
+}
+
+.sidebar-info h1 a:hover,
+.sidebar-info h1 a:focus-visible {
+    color: var(--accent-soft);
+    border-bottom-color: var(--accent-soft);
+}
+
+.sidebar-info h1 a:focus-visible {
+    outline: 2px solid rgba(212, 169, 152, 0.5);
+    outline-offset: 4px;
+}
+
 .sidebar-role {
     margin-bottom: 9px;
     color: var(--accent-soft);
@@ -320,6 +351,44 @@ section h2 i {
 
 .bio p {
     margin-bottom: 18px;
+}
+
+.bio-link {
+    color: var(--navy);
+    border-bottom: 1px solid rgba(164, 95, 69, 0.48);
+    font-weight: 600;
+    transition: color 160ms ease, border-color 160ms ease;
+}
+
+.bio-link:hover,
+.bio-link:focus-visible {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.bio-link:focus-visible {
+    outline: 2px solid rgba(164, 95, 69, 0.22);
+    outline-offset: 2px;
+}
+
+.advisor-name {
+    color: var(--navy);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.advisor-title {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.advisor-link {
+    white-space: nowrap;
+}
+
+.primary-advisor-name {
+    color: var(--navy-deep);
+    font-weight: 700;
 }
 
 .bio h3 {
@@ -499,7 +568,9 @@ footer {
     color: rgba(255, 255, 255, 0.9);
     font-family: "Lora", Georgia, serif;
     font-size: 13px;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.025em;
 }
 
 .footer-meta {
@@ -513,8 +584,11 @@ footer {
 }
 
 .flag-counter img {
+    display: block;
+    width: 120px;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
     opacity: 0.86;
 }
 
