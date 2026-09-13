@@ -371,17 +371,6 @@ section h2 i {
     outline-offset: 2px;
 }
 
-.advisor-name {
-    color: var(--navy);
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.advisor-title {
-    color: var(--text);
-    font-weight: 500;
-}
-
 .advisor-link {
     white-space: nowrap;
 }
